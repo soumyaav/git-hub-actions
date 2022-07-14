@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   run-shell-command:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps: 
       - name: echo a string
         run: echo "Hello World"
