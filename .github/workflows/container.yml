@@ -3,7 +3,7 @@ on: push
 
 jobs: 
   docker-steps:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     container:
       image: node:10.18.0-jessie
     steps:
@@ -31,7 +31,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_MESSAGE: "Hello slack"
   node-docker:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     services:
       app:
         image: alialaa17/node-api
