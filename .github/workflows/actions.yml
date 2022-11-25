@@ -4,7 +4,7 @@ on: [push]
 
 jobs: 
   run-github-actions: 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: List Files by atin
         run: |
